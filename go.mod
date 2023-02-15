@@ -1,4 +1,4 @@
-module jiazhen-api
+module github.com/timjiaming/jiazhen-api
 
 go 1.19
 

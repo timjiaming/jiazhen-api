@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/go-resty/resty/v2"
-	"github.com/jiazhen-api/common"
-	"github.com/jiazhen-api/okx/models"
-	"jiazhen-api/common"
-	"jiazhen-api/okx/models"
+	"github.com/timjiaming/jiazhen-api/common"
+	//"jiazhen-api/common"
+	//"jiazhen-api/okx/models"
+	"github.com/timjiaming/jiazhen-api/okx/models"
 	"net/url"
 )
 

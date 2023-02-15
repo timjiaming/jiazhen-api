@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"jiazhen-api/okx"
-	"jiazhen-api/okx/models"
+	"github.com/timjiaming/jiazhen-api/okx"
+	"github.com/timjiaming/jiazhen-api/okx/models"
 )
 
 func main() {
