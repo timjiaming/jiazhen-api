@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/go-resty/resty/v2"
+	"github.com/jiazhen-api/common"
+	"github.com/jiazhen-api/okx/models"
 	"jiazhen-api/common"
 	"jiazhen-api/okx/models"
 	"net/url"
@@ -388,24 +390,24 @@ func (api *OkxRestApi) GetFundingrate(req models.GetFundingrateReq) (*models.Get
 }
 
 // 获取永续合约历史资金费率
-func (api *OkxRestApi) GetFundingrateHistory(req models.GetFundingrateHistoryReq) (*models.GetFundingrateHistoryData, error) {
+func (api *OkxRestApi) GetFundingrateHistory(req models.GetFundingrateHistoryReq) (models.GetFundingrateHistoryData, error) {
 	query := make(map[string]string)
 	if req.InstId != "" {
 		query["instId"] = req.InstId
 	}
 	if req.Before != "" {
-		query["before"] = req.InstId
+		query["before"] = req.Before
 	}
 	if req.After != "" {
-		query["after"] = req.InstId
+		query["after"] = req.After
 	}
 	if req.Limit != "" {
-		query["limit"] = req.InstId
+		query["limit"] = req.Limit
 	}
 	response := models.GetFundingrateHistoryData{}
 	err := apiPublicTemplateWithQuery(api, resty.MethodGet, PathFundingrateHistory, query, &response)
 	if err == nil {
-		return &response, nil
+		return response, nil
 	}
 	return nil, err
 }
@@ -435,3 +437,7 @@ func (api *OkxRestApi) GetEstimatedPrice(req models.GetEstimatedPriceReq) (*mode
 	}
 	return nil, err
 }
+
+//go env -w GOPRIVATE=github.com/timjiaming/jiazhen-api
+//token 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
+//go env -w GOPRIVATE=github.com/timjiaming
