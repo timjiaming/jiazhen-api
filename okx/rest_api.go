@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"github.com/go-resty/resty/v2"
 	"github.com/timjiaming/jiazhen-api/common"
-	//"jiazhen-api/common"
-	//"jiazhen-api/okx/models"
 	"github.com/timjiaming/jiazhen-api/okx/models"
 	"net/url"
 )
