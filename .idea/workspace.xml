@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34c7e4ea-e7c3-48a1-be8a-f598ae4381ab" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/okx-test/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AllFundingrateData/Exchange/OkxFundingrate.go" beforeDir="false" afterPath="$PROJECT_DIR$/AllFundingrateData/Exchange/OkxFundingrate.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AllFundingrateData/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/AllFundingrateData/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common.go" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/okx/consts.go" beforeDir="false" afterPath="$PROJECT_DIR$/okx/consts.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/okx/models/restful.go" beforeDir="false" afterPath="$PROJECT_DIR$/okx/models/restful.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/okx/models/ws.go" beforeDir="false" afterPath="$PROJECT_DIR$/okx/models/ws.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/okx/rest_api.go" beforeDir="false" afterPath="$PROJECT_DIR$/okx/rest_api.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +30,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/go/go1.20" />
+  <component name="GOROOT" url="file://$USER_HOME$/go/go1.19" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -46,24 +56,32 @@
     &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tim/GolandProjects/jiazhen-api&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/tim/GolandProjects/jiazhen-api/okx&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.goide.configuration.GoLibrariesConfigurableProvider&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;go.sdk&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/okx" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/okx-test" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/AllFundingrateData/Exchange" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build main.go">
+  <component name="RunManager" selected="Go 构建.go build ws_main.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="jiazhen-api" />
       <working_directory value="$PROJECT_DIR$" />
@@ -73,12 +91,13 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build jiazhen-api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build 1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="jiazhen-api" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="DIRECTORY" />
+      <kind value="FILE" />
+      <package value="github.com/timjiaming/jiazhen-api" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$/okx-test/1.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -87,7 +106,34 @@
       <kind value="FILE" />
       <package value="github.com/timjiaming/jiazhen-api" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$/AllFundingrateData/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build pub_stream_serv.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="jiazhen-api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/timjiaming/jiazhen-api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/okx/pub_stream_serv.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="jiazhen-api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/timjiaming/jiazhen-api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/okx-test/test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build ws_main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="jiazhen-api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/timjiaming/jiazhen-api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/okx-test/ws_main.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -101,13 +147,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go 构建.go build pub_stream_serv.go" />
+      <item itemvalue="Go 构建.go build 1.go" />
       <item itemvalue="Go 构建.go build main.go" />
-      <item itemvalue="Go 构建.go build jiazhen-api" />
+      <item itemvalue="Go 构建.go build ws_main.go" />
+      <item itemvalue="Go 构建.go build test.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build ws_main.go" />
+        <item itemvalue="Go 构建.go build pub_stream_serv.go" />
         <item itemvalue="Go 构建.go build main.go" />
-        <item itemvalue="Go 构建.go build jiazhen-api" />
+        <item itemvalue="Go 构建.go build test.go" />
+        <item itemvalue="Go 构建.go build 1.go" />
       </list>
     </recent_temporary>
   </component>
@@ -134,8 +186,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/okx/rest_api.go</url>
-          <line>405</line>
+          <line>539</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/okx/pub_stream_serv.go</url>
+          <line>73</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
